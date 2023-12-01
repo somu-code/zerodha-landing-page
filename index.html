@@ -18,7 +18,7 @@
           <div>Product</div>
           <div>Pricing</div>
           <div>Support</div>
-          <div><img src="./assets/bars-solid.svg" alt="menu" /></div>
+          <div class="cursor-pointer"><img src="./assets/bars-solid.svg" alt="menu" /></div>
         </div>
       </nav>
     </header>
@@ -40,6 +40,21 @@
           >
             Sign up now
           </button>
+        </div>
+        <div class="calculator-container">
+            <h1>Calculate Returns</h1>
+            <div class="calculator">
+                <div class="input">
+
+                    <input type="number" name="capital" id="capital">
+                    <input type="number" name="years" id="years">
+                    <input type="number" name="interest" id="interest">
+                </div>
+                <div class="output">
+                    <span class="calculated-returns"></span>
+                </div>
+                <button>Calculate</button>
+            </div>
         </div>
       </div>
     </main>
