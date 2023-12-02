@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwindcss" : "tailwindcss -i ./src/css/style.css -o ./dist/css/output.css --watch",
-    "build": "tsc -b"
+    "tailwindDev": "tialwindcss -i ./src/css/style.css -o ./public/style.css --watch",
+    "tailwindBuild" : "tailwindcss -i ./src/css/style.css -o ./public/style.css",
+    "jsBuild": "tsc -b",
+    "build" : "tailwindcss -i ./src/css/style.css -o ./public/style.css && tsc -b"
   },
   "keywords": [],
   "author": "",
