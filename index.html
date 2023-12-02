@@ -53,38 +53,54 @@
           </h1>
           <div class="calculator flex flex-row items-center justify-evenly">
             <div class="input flex flex-col gap-4">
-              <input
-                type="number"
-                name="capital"
-                id="capital"
-                placeholder="capital"
-                class="border-2 border-solid border-black rounded p-2"
-              />
-              <input
-                type="number"
-                name="years"
-                id="years"
-                placeholder="years"
-                class="border-2 border-solid border-black rounded p-2"
-              />
-              <input
-                type="number"
-                name="interest"
-                id="interest"
-                placeholder="interest"
-                class="border-2 border-solid border-black rounded p-2"
-              />
+              <div class="flex flex-row justify-between items-center gap-2">
+                <label for="principal" class="font-medium text-lg"
+                  >Principal</label
+                >
+                <input
+                  type="number"
+                  name="principal"
+                  id="principal"
+                  placeholder="principal"
+                  class="border-2 border-solid border-black rounded p-2"
+                />
+              </div>
+              <div class="flex flex-row justify-between items-center gap-2">
+                <label for="years" class="text-lg font-medium">Years</label>
+                <input
+                  type="number"
+                  name="years"
+                  id="years"
+                  placeholder="years"
+                  class="border-2 border-solid border-black rounded p-2"
+                />
+              </div>
+              <div class="flex flex-row justify-between items-center gap-2">
+                <label for="interest" class="text-lg font-medium"
+                  >Interest</label
+                >
+                <input
+                  type="number"
+                  name="interest"
+                  id="interest"
+                  placeholder="interest"
+                  class="border-2 border-solid border-black rounded p-2"
+                />
+              </div>
             </div>
             <div class="output">
               <div class="text-xl font-normal text-[#424242]">
                 Calculated Returns
-                <span class="calculated-returns">0</span>
+                <span class="calculated-returns" id="show-calculated-returns"
+                  >0</span
+                >
               </div>
             </div>
           </div>
           <div class="flex flex-row justify-center">
             <button
               class="mt-8 bg-[#387ed1] text-white rounded py-2 px-7 font-semibold text-xl"
+              id="calculate-button"
             >
               Calculate
             </button>
