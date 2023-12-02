@@ -15,11 +15,11 @@ const calculateButton: HTMLButtonElement = document.getElementById(
 ) as HTMLButtonElement;
 
 calculateButton.addEventListener("click", (event) => {
-  console.log("Clicked");
   const capital: number = parseInt(inputPrincipal.value);
   const years: number = parseInt(inputYears.value);
   const interest: number = parseInt(inputInterest.value);
-  console.log(capital, years, interest);
-  const ammount: number = capital * Math.pow(1 + interest, years);
-  console.log(ammount);
+  const ammount: string = (
+    capital * Math.pow(1 + interest / 100, years)
+  ).toFixed(2);
+  calculatedReturns.innerText = ammount;
 });
